@@ -4,13 +4,25 @@
 
 ## 二维无涨落正则模
 
-在 $64\times64$ 周期网格上，取 $L_x/h_0=L_y/h_0=128$、$\Delta t^*=8$ 和吸引系数 $a=0.0084375$。初始扰动为斜向 $(m_x,m_y)=(2,2)$ 的余弦波，振幅 $10^{-3}h_0$，热噪声为零。JAM 和 Basilisk 拟合到的增长率均为 $s^*\approx1.80083\times10^{-3}$，连续长波理论给出 $1.80299\times10^{-3}$。
+两组均采用 $`64\times64`$ 周期网格，取 $`L_x/h_0=L_y/h_0=128`$、$`\Delta t^*=8`$。初始扰动为斜向 $`(m_x,m_y)=(2,2)`$ 的余弦波，振幅 $`10^{-3}h_0`$，热噪声为零。
+
+### 有吸引
+
+取吸引系数 $`a=0.0084375`$，扰动随时间增长。JAM 和 Basilisk 拟合的增长率均为 $`s^*\approx1.80083\times10^{-3}`$，连续长波理论给出 $`1.80299\times10^{-3}`$。
 
 ![二维无涨落失稳的厚度场及振幅增长](postprocess/figures/normal_mode_2d.png)
 
-[正则模.ipynb](postprocess/正则模.ipynb) 用保存的二维厚度场和振幅历史重画上图。[tcw.ipynb](postprocess/tcw.ipynb) 比较持续加噪与首步加噪的二维壳平均谱，理论曲线采用连续波数和连续时间。首步加噪理论以实测首谱 $H_0$ 为初值。 [正则模 PDF](postprocess/figures/normal_mode_2d.pdf) · [TCW 谱 PDF](postprocess/figures/tcw_continuous.pdf)
+### 无吸引
+
+取 $`a=0`$，表面张力使同一初始扰动衰减。JAM 和 Basilisk 拟合的模态率均为 $`s^*\approx-1.10159\times10^{-3}`$，连续长波理论给出 $`-1.10868\times10^{-3}`$。到 $`t^*=640`$，振幅降到初值的约 49.4%。
+
+![二维无吸引对照的厚度场及振幅衰减](postprocess/figures/normal_mode_2d_no_attraction.png)
+
+[正则模.ipynb](postprocess/正则模.ipynb) 用保存的二维厚度场和振幅历史重画两组结果。[有吸引 PDF](postprocess/figures/normal_mode_2d.pdf) · [无吸引 PDF](postprocess/figures/normal_mode_2d_no_attraction.pdf)
 
 ## 二维热涨落厚度场
+
+[tcw.ipynb](postprocess/tcw.ipynb) 比较持续加噪与首步加噪的二维壳平均谱，理论曲线采用连续波数和连续时间。首步加噪理论以实测首谱 $H_0$ 为初值。 [TCW 谱 PDF](postprocess/figures/tcw_continuous.pdf)
 
 动图取自 $512\times512$ 周期网格上种子 `61100` 的配对轨迹，左侧为 JAM，右侧为 Basilisk。两组显示相同的 $256h_0\times256h_0$ 区域，使用相同的视角、纵轴范围和色标。
 
