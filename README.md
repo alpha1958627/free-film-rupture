@@ -63,9 +63,11 @@ S_{\rm off}(q,t^*)&=S(q,t_0^*)\,e^{2s^*(q)(t^*-t_0^*)},\qquad t_0^*=\Delta t^*.
 
 持续加噪从平膜起步，首步加噪以实测的首步功率谱为初值。图中对每个波数壳的功率取平均后开平方。
 
-![持续加噪与仅首步加噪的 TCW 谱，比较 JAM、Basilisk 与连续理论](postprocess/figures/tcw_continuous.png)
+下图来自 SIPF 作业 `62047`，使用 $`512\times512`$ 网格。持续加噪和仅首步加噪各计算 30 对 JAM/Basilisk 轨迹，保留 84 个完整波数壳，并与连续长波理论同图对照。
 
-[TCW 谱 PDF](postprocess/figures/tcw_continuous.pdf)
+![SIPF 512×512 网格的 TCW 谱，比较 JAM、Basilisk 与连续理论](postprocess/figures/tcw_sipf_512.png)
+
+[SIPF 512×512 TCW 谱 PDF](postprocess/figures/tcw_sipf_512.pdf)
 
 动图取自 $512\times512$ 周期网格上种子 `61100` 的配对轨迹，左侧为 JAM，右侧为 Basilisk。两组显示相同的 $256h_0\times256h_0$ 区域，使用相同的视角、纵轴范围和色标。
 
