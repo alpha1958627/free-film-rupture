@@ -1,0 +1,72 @@
+{
+  "deterministic": [
+    {
+      "attraction": 0.0,
+      "mode": [
+        2,
+        2
+      ],
+      "jam_rate": -0.0011015868384201117,
+      "basilisk_rate": -0.0011015868384201839,
+      "midpoint_rate": -0.0011015868384200971,
+      "continuum_time_rate": -0.0011015797090432663,
+      "relative_rate_error": 7.882583474838611e-14,
+      "max_paired_field_error": 4.440892098500626e-16,
+      "first_step_midpoint_residual": 7.651944873630738e-15
+    },
+    {
+      "attraction": 0.0,
+      "mode": [
+        4,
+        5
+      ],
+      "jam_rate": -0.02346056939400118,
+      "basilisk_rate": -0.02346056937960564,
+      "midpoint_rate": -0.023460569367798483,
+      "continuum_time_rate": -0.023391943586820615,
+      "relative_rate_error": 1.1168823643714632e-09,
+      "max_paired_field_error": 6.661338147750939e-16,
+      "first_step_midpoint_residual": 5.282111011604973e-15
+    },
+    {
+      "attraction": 0.0084375,
+      "mode": [
+        2,
+        2
+      ],
+      "jam_rate": 0.0018008293995696372,
+      "basilisk_rate": 0.0018008293995715125,
+      "midpoint_rate": 0.0018007822489964453,
+      "continuum_time_rate": 0.0018007511050733853,
+      "relative_rate_error": 2.618338507809348e-05,
+      "max_paired_field_error": 6.7390537594747e-14,
+      "first_step_midpoint_residual": 4.198384024602878e-15
+    },
+    {
+      "attraction": 0.0084375,
+      "mode": [
+        4,
+        5
+      ],
+      "jam_rate": -0.011203534607984055,
+      "basilisk_rate": -0.011203534606784542,
+      "midpoint_rate": -0.011203536449350139,
+      "continuum_time_rate": -0.011196042420049127,
+      "relative_rate_error": 1.6446285555637985e-07,
+      "max_paired_field_error": 1.028066520802895e-13,
+      "first_step_midpoint_residual": 3.2827913835648675e-15
+    }
+  ],
+  "thermal": {
+    "N": 64,
+    "L": 128.0,
+    "dt": 8.0,
+    "theta": 1e-05,
+    "seed": 20261115,
+    "replicas": 64,
+    "max_paired_field_error": 8.881784197001252e-16,
+    "max_mean_error": 2.220446049250313e-16,
+    "max_continuous_rms_relative_error": 0.05181742102762965,
+    "max_one_kick_absolute_rms_error": 3.1509625637859973e-18
+  }
+}
