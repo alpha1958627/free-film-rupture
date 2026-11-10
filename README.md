@@ -10,6 +10,18 @@
 
 [正则模.ipynb](postprocess/正则模.ipynb) 用保存的二维厚度场和振幅历史重画上图。[tcw.ipynb](postprocess/tcw.ipynb) 比较持续加噪与首步加噪的二维壳平均谱，理论曲线采用连续波数和连续时间。首步加噪理论以实测首谱 $H_0$ 为初值。 [正则模 PDF](postprocess/figures/normal_mode_2d.pdf) · [TCW 谱 PDF](postprocess/figures/tcw_continuous.pdf)
 
+## 二维热涨落厚度场
+
+动图取自 $512\times512$ 周期网格上种子 `61100` 的配对轨迹，左侧为 JAM，右侧为 Basilisk。两组显示相同的 $256h_0\times256h_0$ 区域，使用相同的视角、纵轴范围和色标。
+
+### 持续加噪
+
+![持续加噪下 JAM 与 Basilisk 的三维厚度场并排动画](postprocess/figures/tcw_continuous_3d_paired.gif)
+
+### 仅首步加噪
+
+![仅首步加噪下 JAM 与 Basilisk 的三维厚度场并排动画](postprocess/figures/tcw_first_step_3d_paired.gif)
+
 ## 仓库结构
 
 - `jam/` 保存 Python 长波求解器。二维版本用解析雅可比求解中点方程。
